@@ -2,6 +2,28 @@
   "expo": {
     "name": "qrcode",
     "slug": "qrcode",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
+          "recordAudioAndroid": true
+        }
+      ]
+    ],
+    "android": {
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.anonymous.qrcode"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f8df7a03-56f7-4391-979e-d4ea63b2e8e0"
+      }
+    }
   }
 }

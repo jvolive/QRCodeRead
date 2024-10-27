@@ -1,4 +1,4 @@
-package com.qrcode
+package com.anonymous.qrcode
 
 import android.app.Application
 import android.content.res.Configuration
